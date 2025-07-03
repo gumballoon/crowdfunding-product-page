@@ -1,0 +1,327 @@
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* 500 700 */
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "FLAR" 0,
+      "VOLM" 0;
+    font-size: 1rem;
+
+    background-color: #fafafa;
+}
+
+#herobox {
+    width: 100%;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+nav {
+    background-image: url('images/image-hero-mobile.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+#nav-mobile {
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3.25rem;
+    text-align: start;
+}
+
+#nav-desktop {
+    max-width: 20rem;
+}
+
+.nav-a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-a:hover {
+    text-decoration: underline 2px;
+}
+
+#nav-mobile .nav-a {
+    color: black;
+    font-size: 1.25rem;
+    padding: 1.5rem;
+}
+
+#nav-mobile .nav-a:hover {
+    color: hsla(0, 0%, 48%, 0.803);
+    text-decoration: none;
+}
+
+section {
+    width: 90%;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 3rem 2rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.204);
+    background-color: white;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.sub-section {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.out-of-stock {
+    opacity: 0.5;
+}
+
+.out-of-stock button {
+    background-color: rgb(118, 117, 117) !important;
+    color: white !important;
+}
+
+#top-section {
+    margin-top: -80px;
+}
+
+#top-section img {
+    position: absolute;
+    top: -1.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+
+.btn-green {
+    background-color: hsl(176, 50%, 47%);
+    font-weight: 500;
+    color: white;
+    padding: 1rem 2.5rem;
+}
+
+.btn-green:hover {
+    background-color: hsl(176, 72%, 28%);
+    color: white;
+}
+
+label[for="bookmark"] {
+    background-color: hsla(0, 0%, 87%, 0.503);
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+}
+
+label[for="bookmark"]:hover {
+    background-color: hsla(0, 0%, 87%, 0.503);
+    color: hsl(176, 50%, 47%);
+}
+
+#bookmark:checked+label {
+    color: white;
+}
+
+#bookmark:checked+label:hover {
+    color: hsl(176, 50%, 47%);
+}
+
+#stats div {
+    border-color: transparent !important;
+}
+
+#meter, #meter div {
+    width: 100%; height: 15px;
+    background-color: hsla(0, 0%, 87%, 0.503);
+}
+
+#meter div {
+    width: 80%;
+    background-color: hsl(176, 50%, 47%);
+}
+
+#modal {
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0; left: 0;
+    padding: 30px 0;
+}
+
+#modal-section {
+    position: absolute;
+    top: 30px; left: 50%; transform: translateX(-50%);
+}
+
+#modal-check {
+    position: fixed;
+    top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);
+    max-width: 450px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+input {
+    appearance: none;
+}
+
+.modal-label {
+    width: 18px; height: 18px;
+    background-color: transparent;
+    outline: 1px solid hsla(0, 0%, 87%, 0.8);
+    outline-offset: 5px;
+    border-radius: 100%;
+}
+
+.modal-label:hover {
+    outline-color:  hsl(176, 50%, 47%);
+    cursor: pointer;
+}
+
+label[for="mahogany"]:hover {
+    outline-color: hsla(0, 0%, 87%, 0.8);
+    cursor: default;
+}
+
+input:checked+label {
+    background-color: hsl(176, 50%, 47%);
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]:focus {
+    outline: none;
+}
+
+.hr-modal {
+    width: 100%; height: 2px;
+    background-color: hsla(0, 0%, 87%, 0.8);
+}
+
+.btn-green {
+    background-color: hsl(176, 50%, 47%);
+    font-weight: 500;
+    color: white;
+    padding: 1rem 2.5rem;
+}
+
+.pledge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsla(0, 0%, 87%, 0.8);
+}
+
+.pledge:hover, .pledge:focus {
+    border-color: hsl(176, 50%, 47%);
+}
+
+.pledge-title:hover {
+    color: hsl(176, 50%, 47%);
+    cursor: pointer;
+    bottom: 0;
+}
+
+.section-selected {
+    border-color: hsl(176, 50%, 47%);
+}
+
+.error {
+    color: hsl(176, 50%, 47%);
+    position: absolute;
+    top: 110%;
+}
+
+/* T E X T */
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+/* C O L O R S */
+.green-400 {
+    color: hsl(176, 50%, 47%);
+}
+
+.green-700 {
+    color: hsl(176, 72%, 28%);
+}
+
+.gray-500, p {
+    color: hsla(0, 0%, 48%, 0.85);
+}
+
+/*Media Queries*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+    nav {
+        background-image: url('images/image-hero-desktop.jpg');
+    }
+
+    nav-a:hover {
+        text-decoration-color: white;
+    }
+
+    section {
+        max-width: 700px;
+    }
+
+    #stats div {
+        border-color: hsla(0, 0%, 87%, 0.75) !important;
+    }
+
+    .error {
+        top: 105%;
+        right: 0;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  
+
+}
