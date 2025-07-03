@@ -246,6 +246,8 @@ modalCheckButton.addEventListener('click', function() {
     const meterPercentage = (backedValue / 100000) * 100;
     meter.style.width = meterPercentage + '%';
 
+    pledgeValue = 0;
+
     resetModal();
     modalCheck.classList.add('d-none');
 })
