@@ -172,6 +172,7 @@ label[for="bookmark"]:hover {
 #modal-section {
     position: absolute;
     top: 30px; left: 50%; transform: translateX(-50%);
+    min-width: 350px;
 }
 
 #modal-check {
@@ -229,7 +230,7 @@ input[type=number]:focus {
     background-color: hsl(176, 50%, 47%);
     font-weight: 500;
     color: white;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.5rem;
 }
 
 .pledge {
@@ -237,6 +238,7 @@ input[type=number]:focus {
     justify-content: center;
     align-items: center;
     border: 1px solid hsla(0, 0%, 87%, 0.8);
+    min-width: 100px;
 }
 
 .pledge:hover, .pledge:focus {
@@ -281,17 +283,7 @@ input[type=number]:focus {
     color: hsla(0, 0%, 48%, 0.85);
 }
 
-/*Media Queries*/
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  
-
-}
-
+/* M E D I A  Q U E R I E S */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
     nav {
@@ -300,6 +292,10 @@ input[type=number]:focus {
 
     nav-a:hover {
         text-decoration-color: white;
+    }
+
+    .btn-green {
+        padding: 1rem 2.5rem;
     }
 
     section {
@@ -314,14 +310,4 @@ input[type=number]:focus {
         top: 105%;
         right: 0;
     }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  
-
 }
